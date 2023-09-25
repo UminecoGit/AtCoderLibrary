@@ -44,21 +44,6 @@ namespace umiAtcoder{
 
     }
 
-    /*
-    *   pow エラー
-    *   main.cpp:12:11: error: no matching function for call to 'pow'
-    *   cout<<umiAtcoder::pow(2,10)<<endl;
-    *           ^~~~~~~~~~~~~~~
-    *   ./GeneralMath.hpp:48:7: note: candidate template ignored: couldn't infer template argument 'S'
-    *    S pow(T& a,T& n){
-    */
-
-   /*
-        テンプレート起因のエラーの可能性
-   
-   
-   */
-
     long long pow(const long long& a,const long long& n){
 
         if(n==0)return 1;
