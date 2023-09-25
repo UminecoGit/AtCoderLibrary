@@ -54,6 +54,16 @@ namespace umiAtcoder{
 
     }
 
+    long long powMod(const long long &a,const long long &n,const int &m){
+
+        if(n==0)return 1;
+        if(n%2==1)return pow(a,n-1)*a;
+
+        long long x = powMod(a,n/2,m);
+        return x*x%m;
+    
+    }
+
     template<typename T>
     vector<T> primes(T n){
 
