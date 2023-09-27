@@ -114,6 +114,23 @@ namespace umiAtcoder{
         return divisor;
     }
 
+    vector<long long> prFctrz(long long n){
+
+        vector<long long> prf;
+        long long ns = n;
+        for(long long i=2;i*i<=n;i++){
+            while(ns%i==0){
+                ns /= i;
+                prf.push_back(i);
+            }
+        }
+
+        if(ns!=1)prf.push_back(ns);
+
+        return prf;
+    
+    }
+
 }
 
 
